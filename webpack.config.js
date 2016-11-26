@@ -21,6 +21,8 @@ module.exports = {
         'react': 'preact-compat',
         'react-dom': 'preact-compat',
         'react-dom/server': 'preact-compat',
+        'components': path.resolve(__dirname, 'src/components'),
+        'services': path.resolve(__dirname, 'src/services')
     },
   },
   module: {
@@ -43,6 +45,7 @@ module.exports = {
   ],
   devServer: {
     contentBase: __dirname + '/src',
-    port: 3001
+    port: 3001,
+    historyApiFallback: true
   }
 }

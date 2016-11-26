@@ -1,9 +1,3 @@
 import {h, render, Component} from 'preact';
-class App extends  Component {
-  render(){
-    return (
-      <h1>Hello</h1>
-    )
-  }
-}
-render(<App />, document.getElementById("root"));
+import App from 'components/application';
+render(<App name="Vijay" />, document.getElementById("root"));
